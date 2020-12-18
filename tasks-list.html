@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список задач</title>
+  <link rel="stylesheet" href="dist/index.css">
+  <link rel="stylesheet" href="dist/tasks-list.css">
+</head>
+<body>
+  <header>
+    <h2>Список задач</h2>
+  </header>
+  <main>
+      <form>
+        <div class="list-header">
+          <select name="sort" class="sort-tasks">
+            <option value="newer">Сначала новые</option>
+            <option value="older">Сначала старые</option>
+          </select>
+          <button class="delete-all-btn" disabled>Удалить отмеченные</button>
+        </div>
+        <div class="tasks">
+          <div class="task-item flex-row">
+            <span class="name col-3">Название задачи</span>
+            <span class="description col-5">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus provident eligendi, dolore consectetur, ipsum voluptatum vero voluptate eveniet obcaecati ratione iusto temporibus! Reiciendis porro minima eaque expedita, at labore nemo.</span>
+            <p class="date col-3">Выполнить до <span class="date-value">12.12.2020</span></p>
+            <div class="col-1 ">
+              <input type="checkbox" class="checkbox">
+              <i class="delete-item-btn">Удалить</i>
+            </div>
+          </div>
+        </div>
+      </form>
+  </main>
+  <script src="dist/tasks-list.js"></script>
+</body>
+</html>
