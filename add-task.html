@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/index.css">
+  <link rel="stylesheet" href="./dist/add-task.css">
+  <title>Добавить задачу</title>
+</head>
+<body>
+  <header>
+    <h2>Добавить задачу</h2>
+  </header>
+  <main>
+    <div class="link-back">
+      <a href="tasks-list.html">
+        <i class="material-icons">arrow_back</i>
+        <p>К списку задач</p>
+      </a>
+    </div>
+    <form action="#" name="form">
+      <div class="name">
+        <p>Название задачи:</p>
+        <input name="name" type="text" min="5" max="30" required>
+      </div>
+      <div class="description">
+        <p>Описание задачи:</p>
+        <textarea name="description" rows="4" required></textarea>
+      </div>
+      <div class="date">
+        <p>Срок выполнения:</p>
+        <input name="date" readonly type="text" required>
+      </div>
+      <input type="button" name="add-btn" value="Добавить участников">
+      <div class="participants">
+        <input name="participants" type="text" placeholder="Введите участников через запятую">
+      </div> 
+      <div class="submit">
+        <input type="submit" value="Добавить">
+      </div>
+    </form>
+  </main>
+
+  <script src="./dist/add-task.js"></script>
+</body>
+</html>

@@ -7,6 +7,52 @@
 
 body,
 input,
-button {
+button,
+select {
   font-family: 'Ubuntu', sans-serif;
+}
+
+a,
+button,
+input[type="button"],
+input[type="submit"],
+select {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: #1976D2;
+  border-radius: 10px;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+a:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+select:hover {
+  background-color: #2196F3;
+}
+
+
+header {
+  color: #FFFFFF;
+  background-color: #1976D2;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.5rem; 
+  padding: 0.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+main {
+  color: #212121;
+  width: 80%;
+  margin: 0 auto;
 }

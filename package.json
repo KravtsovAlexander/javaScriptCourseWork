@@ -30,6 +30,7 @@
     "webpack-cli": "^4.2.0"
   },
   "dependencies": {
+    "flatpickr": "^4.6.6",
     "postcss-discard-comments": "^4.0.2"
   },
   "browserslist": [
