@@ -22,22 +22,29 @@
     <form action="#" name="form">
       <div class="name">
         <p>Название задачи:</p>
-        <input name="name" type="text" min="5" max="30" required>
+        <input name="name" type="text" maxlength="50" >
+        <span class="error-message">error-message</span>
       </div>
       <div class="description">
         <p>Описание задачи:</p>
-        <textarea name="description" rows="4" required></textarea>
+        <textarea name="description" rows="4" maxlength="500"></textarea>
+        <span class="error-message">error-message</span>
       </div>
       <div class="date">
         <p>Срок выполнения:</p>
-        <input name="date" readonly type="text" required>
+        <div>
+          <input name="date" readonly type="text">
+          <span class="error-message">error-message</span>
+        </div>
       </div>
       <input type="button" name="add-btn" value="Добавить участников">
       <div class="participants">
-        <input name="participants" type="text" placeholder="Введите участников через запятую">
+        <input name="participants" class="participants-disabled" type="text" maxlength="500"
+                                    placeholder="Введите участников через запятую">
+        <span class="error-message">error-message</span>
       </div> 
       <div class="submit">
-        <input type="submit" value="Добавить">
+        <input type="submit" name="submit" value="Добавить">
       </div>
     </form>
   </main>

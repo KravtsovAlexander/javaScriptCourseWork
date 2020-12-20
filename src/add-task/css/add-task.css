@@ -66,10 +66,36 @@ textarea {
   padding: 0;
 }
 
-.participants input {
+.participants-disabled {
   display: none;
 }
 
+
 .submit input {
   margin: 0 auto;
+}
+
+.error-message {
+  font-size: 0.5em;
+  font-style: italic;
+  display: block;
+  padding: 0.3em 0 0 0.3em;
+  opacity: 0;
+}
+
+.show {
+  animation-name: message;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes message {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
