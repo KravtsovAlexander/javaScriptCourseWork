@@ -106,3 +106,10 @@ textarea {
     opacity: 0;
   }
 }
+
+@media screen and (max-width: 640px) {
+  main,
+  header {
+    width: 100%;
+  }
+}
