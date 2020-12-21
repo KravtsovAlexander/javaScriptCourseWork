@@ -10,7 +10,8 @@ let name = form.name,
     date = form.date,
     addBtn = form['add-btn'],
     participants = form.participants,
-    submit = form.submit;
+    submit = form.submit,
+    successMsg = document.querySelector('.success-message');
     
 flatpickr(date, {
   locale: Russian,
@@ -74,8 +75,8 @@ function takeForm(validateForm, rules, event) {
 
   let task = {
     name: name.value.trim(),
-    description: description.value,
-    participants: participants.value.trim(),
+    description: description.value.trim(),
+    participants: participants.value.split(',').map(n => n.trim()).join(', '),
     date: date.value
   };
 
@@ -83,7 +84,8 @@ function takeForm(validateForm, rules, event) {
   tasks = tasks ? tasks : [];
   tasks.push(task);
   localStorage.setItem('tasks', JSON.stringify(tasks));
+  successMsg.classList.add('show');
+  successMsg.addEventListener('animationend', () => successMsg.classList.remove('show'));
 
   event.target.reset();
-  
 }

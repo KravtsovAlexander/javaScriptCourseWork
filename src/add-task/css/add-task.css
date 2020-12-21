@@ -83,6 +83,13 @@ textarea {
   opacity: 0;
 }
 
+.success-message {
+  font-size: 1.5rem;
+  display: block;
+  text-align: center;
+  opacity: 0;
+}
+
 .show {
   animation-name: message;
   animation-duration: 3s;

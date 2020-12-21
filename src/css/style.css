@@ -16,11 +16,11 @@ a,
 button,
 input[type="button"],
 input[type="submit"],
-select {
+select { 
   text-decoration: none;
   display: flex;
   align-items: center;
-  background-color: #1976D2;
+  background-color: #1976d2;
   border-radius: 10px;
   color: white;
   padding: 0.5rem;

@@ -13,16 +13,21 @@
     <h2>Список задач</h2>
   </header>
   <main>
-      <form>
+      <form name="form">
         <div class="list-header">
-          <select name="sort" class="sort-tasks">
-            <option value="newer">Сначала новые</option>
-            <option value="older">Сначала старые</option>
-          </select>
+          <div class="sort-btn-wrapper">
+            <select class="sort-btn"name="sort">
+              <option value="" selected>-- Сортировать --</option>
+              <option value="newer">Сначала новые</option>
+              <option value="older">Сначала старые</option>
+            </select>
+          </div>
           <a class="add-task-btn" href="add-task.html">Добавить задачу</a>
           <button class="delete-btn material-icons disabled">delete</button>
         </div>
-        <div class="tasks"></div>
+        <div class="tasks">
+          <h2 class="empty-message">Список задач пуст</h2>
+        </div>
       </form>
   </main>
   <script src="dist/tasks-list.js"></script>
