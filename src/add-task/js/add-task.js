@@ -69,7 +69,7 @@ function takeForm(validateForm, rules, event) {
   let exception = null;
   if (participants.classList.contains('participants-disabled')) {
     exception = 'participantsRules';
-    participants.value = ""
+    participants.value = "";
   }
   if(!validateForm.call(this, rules, exception)) return;
 
